@@ -1,4 +1,4 @@
-### TECSUPNET
+### TalkTec
 
 Social network for Tecsup students
 
