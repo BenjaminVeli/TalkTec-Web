@@ -1,0 +1,76 @@
+.modal-overlay-profile {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content-profile {
+  background: var(--body-color);
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 100%;
+  position: relative;
+}
+
+.modal-header-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  color: var(--text--color);
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .close-icon {
+    font-size: 1.5rem;
+    color: var(--text--color);
+  }
+}
+
+.file-input-label {
+  color: var(--text--color);
+  cursor: pointer;
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 0 15px;
+
+  img {
+    width: 80px;
+    border-radius: 40px;
+  }
+}
+
+.file-input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  display: none;
+}
+
+.submit-button {
+  background-color: #00a6ff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

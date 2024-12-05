@@ -1,0 +1,176 @@
+.profile-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 95vh;
+    width: 100%;
+  
+    .profile {
+      min-height: inherit;
+      width: 100%;
+      max-width: 1200px;
+      position: relative;
+    }
+  
+    .profile-banner, .profile-photo, .profile-info {
+      position: absolute;
+    }
+  
+    .profile-banner {
+      border-radius: 5px;
+      height: 450px;
+      width: 100%;
+      position: absolute;
+      overflow: hidden;
+      top: 15px;
+  
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+  
+    .profile-photo {
+      aspect-ratio: 1;
+      align-items: center;
+      background-color: lightgrey;
+      border: 8px solid limegreen;
+      border-radius: 50%;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      display: flex;
+      height: 180px;
+      justify-content: center;
+      justify-self: center;
+      overflow: hidden;
+      top: 30%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      z-index: 5;
+  
+      img {
+        background-color: lightgray;
+        max-height: 180px;
+      }
+    }
+    
+
+    .profile-info {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      padding: 10% 15px 35px 15px;
+      top: 40%;
+      text-align: center;
+      z-index: 4;
+
+      ._interest {
+        color: var(--text--color);
+        display: flex;
+        grid-gap: 0 8px;
+        margin: 2px 0;
+      }
+
+      .edit-button {
+        align-self: flex-end; // Alinea el botón al inicio del eje transversal (vertical)
+        align-items: center;
+    
+        button {
+          background-color: #00a6ff;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          margin-right: 20px;
+          cursor: pointer;
+        }
+      }
+  
+      ._interactions {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        margin: 25px 0 0;
+  
+        button {
+          background-color: transparent;
+          border: none;
+          border-bottom: 3px solid transparent;
+          color: #00a6ff;
+          font-size: 18px;
+          height: 48px;
+          opacity: 50%;
+        }
+  
+        button:hover, button.active {
+          border-bottom: 3px solid #00a6ff;
+          cursor: pointer;
+          opacity: 100%;
+          transition: all 0.3s ease-out;
+        }
+  
+        button:focus {
+          outline: none;
+        }
+      }
+  
+      &.p-card {
+        width: 95%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+  
+      h4 {
+        color: var(--text--color);
+        font-size: 28px;
+        margin: 0 0 5px;
+      }
+  
+      h6 {
+        font-size: 14px;
+      }
+  
+      span {
+        opacity: 80%;
+        font-weight: bold;
+  
+        &:first-child {
+          opacity: 70%;
+        }
+      }
+    }
+  }
+
+.icon-delete, .icon-edit, .icon-like, .icon-coment {
+  transition: color 0.3s ease; 
+}
+
+.comment, .icon-delete, .icon-edit, .icon-like {
+  color: var(--text--color);
+}
+
+.icon-coment:hover {
+  color: #00a6ff;
+}
+
+.icon-delete:hover {
+  color: red;
+}
+
+.icon-like:hover {
+  color: blue
+}
+
+.icon-edit:hover {
+  color: rgb(0, 167, 0);
+}
+
+.p-card {
+  background-color: var(--bg-color);
+  border-radius: 18px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 35px 15px;
+  width: 100%;
+}
